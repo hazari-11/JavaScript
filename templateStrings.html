@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance JS</title>
+    <script>
+        // let user = "Rupesh";
+        // let marks = "350";
+        // let hello = `Hello "${user}" 
+        //    your marks is 
+        // '${marks}'`;
+        // document.write("Hello " + user + " Welcome"); 
+        //document.write(hello); 
+        // using template string or template literals
+        // console.log(hello);
+
+        let firstName = "Yahoo";
+        let lastName = "Baba";
+
+        function fullName(firstName, lastName){
+            return `${firstName} ${lastName}`;
+        }
+
+        let hello = `Hello "${fullName(firstName, lastName)}"` ;
+
+        document.write(hello); 
+        console.log(hello);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

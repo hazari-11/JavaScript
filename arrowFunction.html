@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance JS</title>
+    <script>
+
+        // let welcome = function(name){         //Normal Function
+        //     return `Hello & Welcome ${name}`;
+        // }
+
+        // console.log(welcome("Rupesh"));
+
+        let welcome = (name, age) => {                //Arrow Function
+            return `Hello & Welcome ${name}, you are ${age}`;
+        }
+
+        document.write(welcome("Rupesh", 21));
+        console.log(typeof welcome);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
