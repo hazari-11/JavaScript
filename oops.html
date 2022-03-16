@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance JS</title>
+    <script>
+        // class hello{
+        //     message(){                //Method
+        //         console.log("Hello Everyone");
+        //     }
+        //     sorry(){
+        //         console.log("Sorry everyone");
+        //     }
+        // }
+
+        // let a = new hello(); //Object
+
+        // a.message();
+        // a.sorry();
+
+        class student{
+            constructor(name, age){      // Constructor Method
+                this.studentname = name;
+                this.studentage = age;
+                console.log("Constructor Function");
+            }
+
+            hello(){     // Prototype Method
+                console.log(`Hello ${this.studentname} , your age is : ${this.studentage}`);
+            }
+
+            static staticMethod(){   // no need to make object to access static methods
+                console.log("Static Function");
+            }
+        }
+
+        let a = new student("Rupesh", 21);
+        let b = new student("Hazari", 25);
+
+        a.hello();
+        b.hello();
+        student.staticMethod();
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
