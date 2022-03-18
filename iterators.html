@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance JS</title>
+    <script>
+        function numberIterator(arr){
+            var nextNum = 0;
+            return {
+                next(){
+                    if(nextNum < arr.length){
+                        return {
+                        value : arr[nextNum++],
+                        done : false
+                    }
+                    } else{
+                        return {
+                        done : true
+                    }
+                    }                   
+                }
+            }
+        }
+
+        let numbers = [100,200,300,400,500];
+
+        let num = numberIterator(numbers);
+        console.log(num.next().value);
+        num.next();
+        console.log(num.next().value);
+        console.log(num.next().value);
+        console.log(num.next().value);
+
+        // let str = "Rupesh Kr. Hazari";
+
+        // let iter = numbers[Symbol.iterator]();
+        // let iter = str[Symbol.iterator]();
+
+        // let result = iter.next();
+
+        // while(!result.done){
+        //     console.log(result.value);
+        //     result = iter.next();
+        // }
+
+        // for(let char of str){
+        //     console.log(char);
+        // }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

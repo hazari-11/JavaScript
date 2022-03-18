@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advance JS</title>
+    <script>
+      function* generateit() {
+        // yield "Yield No. 1";
+        // yield "Yield No. 2";
+        // yield "Yield No. 3";
+
+        // let nextNum = 300;
+        // while (true) {
+        //   yield nextNum++;
+        // }
+
+        // let result = (yield) * 10;
+
+        // let yArray = [yield,yield,yield];
+        // console.log(`Result : ${yArray[2]}`);
+
+        yield 'PHP';
+        yield 'Node';
+        yield 'Angular';
+        yield 'React';
+      }
+
+      let g = generateit();
+      console.log(g.next().value);
+    //   console.log([...g]);
+      console.log(g.return('Ending Now'));
+      console.log(g.next().value);
+    
+
+    //   g.next("PHP");
+    //   g.next("Python");
+    //   g.next("Java");
+    //   g.next(800);
+
+    //   console.log(g.next().value);
+
+        // for (let value of g) {
+        //     if(value > 310) break;
+        //   console.log(value);
+        // }
+    </script>
+  </head>
+  <body></body>
+</html>
